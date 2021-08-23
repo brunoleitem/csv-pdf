@@ -1,0 +1,16 @@
+{
+  "name": "betha-projeto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:csv": "node ./app.js",
+    "start:html": "node ./utils/createhtml.js"
+  },
+  "author": "brunoleitem <brunoleiteem@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.16.0",
+    "csvtojson": "^2.0.10",
+    "puppeteer": "^10.2.0"
+  }
+}
