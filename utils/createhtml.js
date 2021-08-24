@@ -1,23 +1,6 @@
 const fs = require('fs')
 const data = require('../data.json')
-const path = require('path')
-
-/* 
-  {
-    "DATA": "05/06/2020",
-    "FORNECEDOR": "LEISTUNG",
-    "DESTINO": "ACRE",
-    "ESTADO/MUNICIPIO": "ESTADO",
-    "TIPO": "UTI",
-    "QUANTIDADE": "30",
-    "VALOR": "R$ 1.800.000,00",
-    "DESTINATARIO": "Secretaria Estadual de Saúde",
-    "UF": "AC",
-    "DATA DE ENTREGA": "08/06/2020"
-  },
-  */
-
-const pathHTML = path.resolve(__dirname, 'template.html')
+const {pathHTML} = require('./paths')
 
 const createRow = (item) => `
   <tr>

@@ -1,12 +1,12 @@
 const csv = require('csvtojson')
 const fs = require('fs')
-class csvLoader {
+const { pathCSV } = require('./paths')
 
-  generate(filename) {
+
+const generate = (filename) => {
     csv({delimiter: ';'})
     .fromFile(filename)
     .then((json)=> {
-    
       fs.writeFileSync('data.json', JSON.stringify(json), 'utf8', (err)=> {
         if(err) console.log(err)
       })
@@ -14,7 +14,8 @@ class csvLoader {
   }
 
 
+generate(pathCSV);
 
-}
 
-module.exports = csvLoader 
+
+

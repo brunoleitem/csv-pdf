@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start:csv": "node ./app.js",
-    "start:html": "node ./utils/createhtml.js"
+    "build:csv": "node ./utils/csvtojson.js",
+    "build:html": "node ./utils/createhtml.js",
+    "build": "node ./utils/createpdf.js"
   },
   "author": "brunoleitem <brunoleiteem@gmail.com>",
   "license": "MIT",
